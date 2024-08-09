@@ -1,0 +1,52 @@
+.book {
+    margin: 100px auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 90%;
+}
+
+.book-left {
+    flex-basis: 40%;
+}
+
+.book-right {
+    flex-basis: 56%;
+}
+
+.book_img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.btn-book {
+    background-color: #0d5e90;
+    color: #fafafa;
+    padding: 14px 25px;
+    font-size: 16px;
+    border-radius: 30px;
+    cursor: pointer;
+    border: 0;
+    outline: 0;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.book h3 {
+    font-weight: 600;
+    font-size: 16px;
+    color: #0d5e90;
+}
+
+.book h2 {
+    font-size: 35px;
+    color: #282928;
+    margin: 10px 0;
+    max-width: 400px;
+}
+
+.book p {
+    color: #282928;
+    margin-bottom: 15px;
+}
