@@ -36,3 +36,17 @@ a {
     align-items: center;
     justify-content: center;
 }
+
+.btn.blue-btn {
+    background-color: #0d5e90;
+    color: #fafafa;
+    padding: 14px 25px;
+    font-size: 16px;
+    border-radius: 30px;
+    cursor: pointer;
+    border: 0;
+    outline: 0;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
