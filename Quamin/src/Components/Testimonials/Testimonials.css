@@ -1,0 +1,66 @@
+.testimonials {
+    margin: 80px auto;
+    padding: 0 80px;
+    position: relative;
+}
+
+.next-btn,
+.back-btn {
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+    padding: 15px;
+    width: 50px;
+    cursor: pointer;
+    border-radius: 50%;
+    background: #0d5e90;
+}
+
+.back-btn {
+    right: auto;
+    left: 0;
+}
+
+.slider {
+    overflow: hidden;
+}
+
+.slider ul {
+    display: flex;
+    width: 200%;
+    overflow-x: hidden;
+    transition: 0.5s;
+}
+
+.slider ul li {
+    list-style: none;
+    width: 50%;
+    padding: 20px;
+}
+
+.slide {
+    box-shadow: 0 0 20px rgba(40, 41, 40, 0.2);
+    padding: 40px;
+    border-radius: 10px;
+    color: #282928;
+    line-height: 1.4;
+}
+
+.slide img {
+    width: 85px;
+    border-radius: 50%;
+    margin-right: 10px;
+    border: 4px solid #0d5e90;
+}
+
+.user-info {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    font-size: 15px;
+}
+
+.user-info h3 {
+    color: #0d5e90;
+}
