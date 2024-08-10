@@ -37,7 +37,7 @@ const Testimonials = () => {
                             <img src={user_1} alt="" />
                             <div>
                                 <h3>William Bowery</h3>
-                                <span>XYZ Corp, USA</span>
+                                <span>Independent Songwriter, UK</span>
                             </div>
                         </div>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit animi assumenda in architecto quia ratione amet veritatis facilis tempore ducimus fugit sequi nulla nam harum delectus sint aliquam, natus pariatur?</p>
@@ -48,8 +48,8 @@ const Testimonials = () => {
                         <div className="user-info">
                             <img src={user_2} alt="" />
                             <div>
-                                <h3>Joe Alwyn</h3>
-                                <span>ABC Software, Germany</span>
+                                <h3>Jack Antonoff</h3>
+                                <span>LMN Tech, USA</span>
                             </div>
                         </div>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit animi assumenda in architecto quia ratione amet veritatis facilis tempore ducimus fugit sequi nulla nam harum delectus sint aliquam, natus pariatur?</p>
@@ -61,7 +61,7 @@ const Testimonials = () => {
                             <img src={user_3} alt="" />
                             <div>
                                 <h3>Nils Sjöberg</h3>
-                                <span>GHI Marketing, India</span>
+                                <span>Independent Songwriter, Sweden</span>
                             </div>
                         </div>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit animi assumenda in architecto quia ratione amet veritatis facilis tempore ducimus fugit sequi nulla nam harum delectus sint aliquam, natus pariatur?</p>
@@ -73,7 +73,7 @@ const Testimonials = () => {
                             <img src={user_4} alt="" />
                             <div>
                                 <h3>Travis Kelce</h3>
-                                <span>Apple, USA</span>
+                                <span>Kansas City Chiefs, USA</span>
                             </div>
                         </div>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit animi assumenda in architecto quia ratione amet veritatis facilis tempore ducimus fugit sequi nulla nam harum delectus sint aliquam, natus pariatur?</p>
