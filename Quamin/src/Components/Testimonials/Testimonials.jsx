@@ -61,7 +61,7 @@ const Testimonials = () => {
                             <img src={user_3} alt="" />
                             <div>
                                 <h3>Nils Sjöberg</h3>
-                                <span>Independent Songwriter, Sweden</span>
+                                <span>Independent Songwriter, USA</span>
                             </div>
                         </div>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit animi assumenda in architecto quia ratione amet veritatis facilis tempore ducimus fugit sequi nulla nam harum delectus sint aliquam, natus pariatur?</p>

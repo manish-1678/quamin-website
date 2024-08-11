@@ -37,6 +37,9 @@
     list-style: none;
     width: 50%;
     padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .slide {
@@ -45,6 +48,10 @@
     border-radius: 10px;
     color: #282928;
     line-height: 1.4;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 300px;
 }
 
 .slide img {
@@ -63,4 +70,41 @@
 
 .user-info h3 {
     color: #0d5e90;
+}
+
+/* Media Query */
+
+@media (max-width: 800px) {
+    .testimonials {
+        padding: 0 40px;
+    }
+    .next-btn,
+    .back-btn {
+        padding: 10px;
+        width: 35px;
+    }
+    .testimonials ul li {
+        padding: 10px;
+    }
+    .slide {
+        padding: 10px;
+    }
+    .slide img {
+        width: 50px;
+        border: 3px solid #0d5e90;
+    }
+}
+
+@media (max-width: 600px) {
+    .user-info {
+        display: block;
+        margin-bottom: 10px;
+        font-size: 12px;
+    }
+    .user-info h3 {
+        font-size: 16px;
+    }
+    .slider p {
+        font-size: 12px;
+    }
 }

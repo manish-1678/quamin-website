@@ -45,3 +45,15 @@
     opacity: 1;
     padding-top: 0;
 }
+
+/* Media Query */
+
+@media (max-width: 650px) {
+    .aboutus {
+        flex-direction: column;
+    }
+    .about {
+        flex-basis: 100%;
+        margin: 20px;
+    }
+}

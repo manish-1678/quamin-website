@@ -117,3 +117,14 @@
     color: #ff0000; /* YouTube Red */
     transform: translateY(-5px);
 }
+
+/* Media Query */
+
+@media (max-width: 700px) {
+    .contact {
+        display: block;
+    }
+    .contact-col {
+        padding: 20px;
+    }
+}

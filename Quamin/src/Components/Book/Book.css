@@ -36,3 +36,19 @@
     color: #282928;
     margin-bottom: 15px;
 }
+
+/* Media Query */
+
+@media (max-width: 800px) {
+    .book {
+        flex-direction: column;
+    }
+    .book-left {
+        flex-basis: 100%;
+        margin: 20px;
+        order: 2;
+    }
+    .book-right {
+        flex-basis: 100%;
+    }
+}
