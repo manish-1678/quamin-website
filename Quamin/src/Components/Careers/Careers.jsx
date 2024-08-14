@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom';
 import "./Careers.css"
 import gallery_1 from "../../assets/salesmanager.png"
 import gallery_2 from "../../assets/cybersecurity.png"
@@ -42,7 +43,7 @@ const Careers = () => {
                 </div>
             ))}
         </div>
-        <button className='btn blue-btn'>Apply Now</button>
+        <Link to="/job-application"><button className='btn blue-btn'>Apply Now</button></Link>
     </div>
   )
 }

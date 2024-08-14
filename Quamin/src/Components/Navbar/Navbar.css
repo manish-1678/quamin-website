@@ -73,4 +73,21 @@ nav ul li {
     .hide-mobile-menu {
         right: -240px;
     }
+
+    .menu-icon {
+        background-color: rgba(40, 41, 40, 0.8);
+        box-shadow: 0 4px 16px rgba(40, 41, 40, 0.37);
+        backdrop-filter: blur(5px);
+        -webkit-backdrop-filter: blur(5px);
+        border-radius: 8px;
+        padding: 5px;
+    }
+    .logo {
+        background-color: rgba(250, 250, 250, 0.8);
+        box-shadow: 0 4px 16px rgba(40, 41, 40, 0.37);
+        backdrop-filter: blur(5px);
+        -webkit-backdrop-filter: blur(5px);
+        border-radius: 8px;
+        padding: 5px;
+    }
 }

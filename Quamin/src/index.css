@@ -61,3 +61,18 @@ a {
         padding: 14px 22px;
     }
 }
+
+/* Custom Scrollbar */
+
+::-webkit-scrollbar {
+    width: 15px;
+}
+
+::-webkit-scrollbar-track {
+    background: #282928;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #fafafa;
+    border-radius: 10px;
+}

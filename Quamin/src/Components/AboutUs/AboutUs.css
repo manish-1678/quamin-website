@@ -4,6 +4,7 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
+    flex-wrap: wrap; /* Allows wrapping for smaller screens */
 }
 
 .about img {
@@ -15,6 +16,7 @@
 .about {
     flex-basis: 31%;
     position: relative;
+    margin-bottom: 20px; /* Add margin for better spacing on smaller screens */
 }
 
 .caption {
@@ -32,13 +34,38 @@
     color: #fafafa;
     cursor: pointer;
     opacity: 0;
-    padding-top: 70%;
+    padding: 20px; /* Add padding for better spacing */
     transition: 0.5s;
+    box-sizing: border-box; /* Include padding in the element's total width and height */
 }
 
 .caption img {
     width: 60px;
     margin-bottom: 10px;
+}
+
+.caption h3 {
+    margin: 0;
+    font-size: 18px;
+}
+
+.caption p {
+    display: none;
+    margin: 0;
+    text-align: justify; /* Justify alignment for newspaper style */
+    text-justify: inter-word; /* Ensure proper spacing between words */
+    line-height: 1.6; /* Adjust line height for readability */
+    font-size: 16px;
+    color: #fafafa;
+}
+
+.caption.show p {
+    display: block;
+}
+
+.caption.show img,
+.caption.show h3 {
+    opacity: 0;
 }
 
 .about:hover .caption {
@@ -47,13 +74,24 @@
 }
 
 /* Media Query */
-
 @media (max-width: 650px) {
     .aboutus {
         flex-direction: column;
     }
     .about {
         flex-basis: 100%;
-        margin: 20px;
+        margin: 20px 0; /* Ensure consistent spacing */
+    }
+    .caption {
+        opacity: 1; /* Ensure the caption is always visible on mobile */
+        padding-top: 20px; /* Reduce padding for mobile */
+    }
+    .caption.show img,
+    .caption.show h3 {
+        opacity: 0;
+    }
+    .caption p {
+        display: block; /* Ensure paragraph is displayed on mobile */
+        font-size: 14px; /* Adjust font size for readability */
     }
 }

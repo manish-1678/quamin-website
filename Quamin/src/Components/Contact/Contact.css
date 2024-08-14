@@ -57,6 +57,7 @@
     margin-bottom: 15px;
     margin-top: 5px;
     resize: none;
+    border-radius: 12px;
 }
 
 .contact-col span {
