@@ -1,8 +1,8 @@
 import React, { useEffect, useState } from 'react';
 import { Link, Button, Element, Events, animateScroll as scroll, scrollSpy } from 'react-scroll';
 import './Navbar.css';
-import logo from '../../assets/QuaminMonochrome.png';
-import mobileLogo from '../../assets/logo.png';
+import logo from '../../assets/QuaminGoldMain.png';
+import mobileLogo from '../../assets/mobileGoldLogo.png';
 import menu_icon from "../../assets/menubar.png";
 
 const Navbar = () => {

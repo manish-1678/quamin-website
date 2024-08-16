@@ -14,7 +14,7 @@
     width: 50px;
     cursor: pointer;
     border-radius: 50%;
-    background: #0d5e90;
+    background: #0a0a0a;
 }
 
 .back-btn {
@@ -43,10 +43,10 @@
 }
 
 .slide {
-    box-shadow: 0 0 20px rgba(40, 41, 40, 0.2);
+    box-shadow: 0 0 20px rgba(10, 10, 10, 0.2);
     padding: 40px;
     border-radius: 10px;
-    color: #282928;
+    color: #0a0a0a;
     line-height: 1.4;
     display: flex;
     flex-direction: column;
@@ -58,7 +58,7 @@
     width: 85px;
     border-radius: 50%;
     margin-right: 10px;
-    border: 4px solid #0d5e90;
+    border: 4px solid #b39700;
 }
 
 .user-info {
@@ -69,7 +69,7 @@
 }
 
 .user-info h3 {
-    color: #0d5e90;
+    color: #b39700;
 }
 
 /* Media Query */

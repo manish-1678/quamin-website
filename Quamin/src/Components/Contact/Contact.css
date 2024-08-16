@@ -8,11 +8,11 @@
 
 .contact-col {
     flex-basis: 48%;
-    color: #282928;
+    color: #0a0a0a;
 }
 
 .contact-col h3 {
-    color: #282928;
+    color: #0a0a0a;
     font-weight: 500;
     font-size: 30px;
     display: flex;
@@ -23,7 +23,7 @@
 .contact-col h3 i {
     width: 35px;
     margin-left: 10px;
-    color: #0d5e90;
+    color: #665600;
 }
 
 .contact-col p {
@@ -40,7 +40,7 @@
 }
 
 .contact-col ul li i {
-    color: #0d5e90;
+    color: #665600;
     width: 25px;
     margin-right: 25px;
     font-size: 25px;
@@ -50,7 +50,7 @@
 .contact form textarea {
     display: block;
     width: 100%;
-    background: #e7eff4;
+    background: #fff7cc;
     padding: 15px;
     border: 0;
     outline: 0;
@@ -58,6 +58,10 @@
     margin-top: 5px;
     resize: none;
     border-radius: 12px;
+}
+
+.contact form label {
+    font-weight: 600;
 }
 
 .contact-col span {
@@ -71,7 +75,7 @@
 
 .contact-col ul li .fa-brands {
     font-size: 30px;
-    color: #282928;
+    color: #0a0a0a;
     margin-right: 10px;
     transition: 0.5s;
 }
@@ -91,18 +95,18 @@
 }
 
 .contact-col ul li a i {
-    color: #282928;
+    color: #0a0a0a;
     transition: 0.5s;
 }
 
 /* LinkedIn Icon */
-.contact-col ul li a .fa-linkedin:hover {
+.contact-col ul li a .fa-linkedin-in:hover {
     color: #0077b5; /* LinkedIn Blue */
     transform: translateY(-5px);
 }
 
 /* Facebook Icon */
-.contact-col ul li a .fa-facebook:hover {
+.contact-col ul li a .fa-facebook-f:hover {
     color: #1877f2; /* Facebook Blue */
     transform: translateY(-5px);
 }

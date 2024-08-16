@@ -22,18 +22,18 @@
 .book h3 {
     font-weight: 600;
     font-size: 16px;
-    color: #0d5e90;
+    color: #b39700;
 }
 
 .book h2 {
     font-size: 35px;
-    color: #282928;
+    color: #0a0a0a;
     margin: 10px 0;
     max-width: 400px;
 }
 
 .book p {
-    color: #282928;
+    color: #0a0a0a;
     margin-bottom: 15px;
 }
 
