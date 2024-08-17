@@ -15,6 +15,7 @@ nav {
 
 .logo {
     width: 64px;
+    cursor: pointer;
 }
 
 nav ul li {

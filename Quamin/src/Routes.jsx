@@ -4,6 +4,7 @@ import App from './App';
 import Blog from './Pages/Blog';
 import JobApplication from './Pages/JobApplication';
 import ServiceBooking from './Pages/ServiceBooking';
+import NotFound404 from './Pages/NotFound404'
 
 const AppRoutes = () => {
   return (
@@ -13,6 +14,7 @@ const AppRoutes = () => {
         <Route path="/blog" element={<Blog />} />
         <Route path="/job-application" element={<JobApplication />} />
         <Route path="/service-booking" element={<ServiceBooking />} />
+        <Route path='/*' element={<NotFound404 />} />
       </Routes>
     </Router>
   );
