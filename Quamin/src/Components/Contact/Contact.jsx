@@ -1,9 +1,31 @@
-import React from 'react';
-import { useForm, ValidationError } from '@formspree/react';
+import React, { useRef, useState } from 'react';
+import emailjs from '@emailjs/browser';
 import "./Contact.css";
 
 const Contact = () => {
-    const [state, handleSubmit] = useForm("mzzpvwvl"); // Replace with your Formspree project ID
+    const form = useRef();
+    const [submitting, setSubmitting] = useState(false);
+    const [succeeded, setSucceeded] = useState(false);
+
+    const sendEmail = (e) => {
+        e.preventDefault();
+        setSubmitting(true);
+
+        emailjs
+            .sendForm('service_dh7tt5h', 'template_onbsrie', form.current, {
+                publicKey: 'w8gvnVlMTQqOdjzRm',
+            })
+            .then(
+                () => {
+                    setSucceeded(true);
+                    form.current.reset(); // Clear the form fields on success
+                },
+                () => {
+                    setSubmitting(false);
+                }
+            )
+            .finally(() => setSubmitting(false));
+    };
 
     return (
         <div className="contact">
@@ -23,7 +45,7 @@ const Contact = () => {
                 </ul>
             </div>
             <div className="contact-col">
-                <form onSubmit={handleSubmit}>
+                <form ref={form} onSubmit={sendEmail}>
                     <label htmlFor="name">Name</label>
                     <input
                         id="name"
@@ -48,11 +70,6 @@ const Contact = () => {
                         placeholder="Enter your email ID"
                         required
                     />
-                    <ValidationError 
-                        prefix="Email" 
-                        field="email"
-                        errors={state.errors}
-                    />
                     <label htmlFor="message">Message</label>
                     <textarea
                         id="message"
@@ -61,15 +78,10 @@ const Contact = () => {
                         placeholder="Enter your message"
                         required
                     />
-                    <ValidationError 
-                        prefix="Message" 
-                        field="message"
-                        errors={state.errors}
-                    />
-                    <button className="btn" type="submit" disabled={state.submitting}>
+                    <button className="btn" type="submit" disabled={submitting}>
                         Submit
                     </button>
-                    {state.succeeded && <p>Form Submitted Successfully!</p>}
+                    {succeeded && <p>Form Submitted Successfully!</p>}
                 </form>
             </div>
         </div>

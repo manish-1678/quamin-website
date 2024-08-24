@@ -10,12 +10,14 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@emailjs/browser": "^4.4.1",
     "@formspree/react": "^2.5.1",
     "@fortawesome/fontawesome-svg-core": "^6.6.0",
     "@fortawesome/free-regular-svg-icons": "^6.6.0",
     "@fortawesome/free-solid-svg-icons": "^6.6.0",
     "@fortawesome/react-fontawesome": "^0.2.2",
     "@hcaptcha/react-hcaptcha": "github:hcaptcha/react-hcaptcha",
+    "emailjs": "^4.0.3",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
     "react-native-vector-icons": "^10.1.0",
