@@ -1,10 +1,10 @@
 import React from 'react'
 import { Link } from 'react-router-dom';
 import "./Careers.css"
-import gallery_1 from "../../assets/salesmanager.png"
-import gallery_2 from "../../assets/cybersecurity.png"
-import gallery_3 from "../../assets/enterprisearchitect.png"
-import gallery_4 from "../../assets/accountmanager.png"
+import gallery_1 from "../../assets/salesmanager.jpg"
+import gallery_2 from "../../assets/cybersecurity.jpg"
+import gallery_3 from "../../assets/enterprisearchitect.jpg"
+import gallery_4 from "../../assets/accountmanager.jpg"
 
 const jobData = [
     {
