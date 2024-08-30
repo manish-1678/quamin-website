@@ -21,7 +21,11 @@ const BlogDetail = () => {
   const blog = items.find((post) => post._id === id); // Assuming you use `_id` from MongoDB
 
   if (!blog) {
-    return <p>Loading...</p>;
+    return (
+      <div className="loader-container">
+        <div className="loader"></div>
+      </div>
+    );
   }
 
   return (
