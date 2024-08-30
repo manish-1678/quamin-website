@@ -37,6 +37,10 @@ const BlogDetail = () => {
         className="Indv-Blog-Content"
         dangerouslySetInnerHTML={{ __html: blog.content }}
       />
+
+      <p className="Indv-Blog-Content">
+        {new Date(blog.date).toLocaleDateString()}
+      </p>
     </div>
   );
 };

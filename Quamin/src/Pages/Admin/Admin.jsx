@@ -7,10 +7,11 @@ const Admin = () => {
   const [formData, setFormData] = useState({
     title: "",
     description: "",
-    image: "", // To hold the image URL entered by the user
+    image: "", // This will store the image data in Base64
     category: "",
     author: "",
     content: "",
+    date: "",
   });
 
   const [loading, setLoading] = useState(false);
@@ -18,7 +19,6 @@ const Admin = () => {
   const [error, setError] = useState("");
   const [items, setItems] = useState([]);
 
-  // Fetch items on component mount
   useEffect(() => {
     const fetchItems = async () => {
       try {
@@ -33,6 +33,25 @@ const Admin = () => {
     fetchItems();
   }, []);
 
+  // Function to convert a file to Base64
+  const convertToBase64 = (file) => {
+    return new Promise((resolve, reject) => {
+      const reader = new FileReader();
+      reader.readAsDataURL(file);
+      reader.onload = () => resolve(reader.result);
+      reader.onerror = (error) => reject(error);
+    });
+  };
+
+  const handleFileChange = async (e) => {
+    const file = e.target.files[0];
+    if (file) {
+      const base64 = await convertToBase64(file);
+      setFormData({ ...formData, image: base64 });
+    }
+  };
+
+  // This handles text input changes
   const handleChange = (e) => {
     const { name, value } = e.target;
     setFormData({ ...formData, [name]: value });
@@ -58,7 +77,7 @@ const Admin = () => {
         console.log("Data saved:", result);
         setMessage("Data saved successfully!");
 
-        // Reset form fields
+        // Reset the form fields
         setFormData({
           title: "",
           description: "",
@@ -66,9 +85,10 @@ const Admin = () => {
           category: "",
           author: "",
           content: "",
+          date: "",
         });
 
-        // Fetch items again
+        // Fetch the items again to update the UI
         const fetchItems = async () => {
           const response = await fetch("http://localhost:3000/");
           const data = await response.json();
@@ -163,15 +183,14 @@ const Admin = () => {
           />
         </div>
         <div className="form-group">
-          <label htmlFor="image">Image URL</label>
+          <label htmlFor="image">Upload Image</label>
           <input
-            type="url"
+            type="file"
             id="image"
             name="image"
-            value={formData.image}
-            onChange={handleChange}
+            accept="image/*"
+            onChange={handleFileChange}
             required
-            placeholder="Enter Image URL"
           />
           {formData.image && (
             <img
@@ -194,17 +213,17 @@ const Admin = () => {
           />
         </div>
         <div className="form-group">
-          <label htmlFor="description">Date</label>
-          <textarea
-            id="description"
-            name="description"
-            rows="1"
+          <label htmlFor="date">Date</label>
+          <input
+            type="date"
+            id="date"
+            name="date"
             value={formData.date}
             onChange={handleChange}
             required
-            placeholder="Short text related to your blog"
           />
         </div>
+
         <div className="form-group">
           <label htmlFor="content">Content</label>
           <textarea
@@ -238,9 +257,13 @@ const Admin = () => {
               />
             </div>
             <h1 className="blog-card-heading">{item.title}</h1>
+            <p className="blog-card-desc">
+              {new Date(item.date).toLocaleDateString()}
+            </p>
             <p className="blog-card-author">By {item.author}</p>
             <p className="blog-card-category">{item.category}</p>
             <p className="blog-card-desc">{item.description}</p>
+
             <button
               onClick={() => handleDelete(item._id)}
               className="btn delete-btn"

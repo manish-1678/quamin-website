@@ -65,6 +65,9 @@ const Item = () => {
                 className="IndvBlogImg"
               />
               <h1 className="blog-card-heading">{data.title}</h1>
+              <p className="blog-card-date">
+                {new Date(data.date).toLocaleDateString()}
+              </p>
               <p className="blog-card-author">By {data.author}</p>
               <p className="blog-card-category">{data.category}</p>
               <p className="blog-card-desc">{data.description}</p>
