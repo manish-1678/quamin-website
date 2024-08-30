@@ -1,13 +1,13 @@
 import React from "react";
 import "../../../index.css";
 import "./Story.css";
-import img from "../Assets/blog-story.png";
+import img from "../../../assets/blog-story.webp";
 
 const Story = () => {
   return (
     <div className="Section-Story container">
       <div className="Story-Img">
-        <img src={img} />
+        <img src={img} alt="story"/>
       </div>
       <div className="Story-Text">
         <h1>Who are we?</h1>

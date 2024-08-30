@@ -37,10 +37,10 @@ const Contact = () => {
                     <li><i className="fa-solid fa-phone"></i>+91 999 1115 557</li>
                     <li><i className="fa-solid fa-location-dot"></i>153-155 Franklin Street, New York, New York</li>
                     <li>
-                        <a href="https://www.linkedin.com/company/quamin/posts/?feedView=all" target="_blank" rel="noopener noreferrer"><i className="fa-brands fa-linkedin-in"></i></a>
-                        <a href="" target="_blank" rel="noopener noreferrer"><i className="fa-brands fa-facebook-f"></i></a>
-                        <a href="" target="_blank" rel="noopener noreferrer"><i className="fa-brands fa-github"></i></a>
-                        <a href="" target="_blank" rel="noopener noreferrer"><i className="fa-brands fa-youtube"></i></a>
+                        <a href="https://www.linkedin.com/company/quamin/posts/?feedView=all" target="_blank" rel="noopener noreferrer" aria-label='linkedin'><i className="fa-brands fa-linkedin-in"></i></a>
+                        <a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer" aria-label='facebook'><i className="fa-brands fa-facebook-f"></i></a>
+                        <a href="https://github.com/" target="_blank" rel="noopener noreferrer" aria-label='github'><i className="fa-brands fa-github"></i></a>
+                        <a href="https://www.youtube.com/" target="_blank" rel="noopener noreferrer" aria-label='youtube'><i className="fa-brands fa-youtube"></i></a>
                     </li>
                 </ul>
             </div>
@@ -78,7 +78,7 @@ const Contact = () => {
                         placeholder="Enter your message"
                         required
                     />
-                    <button className="btn" type="submit" disabled={submitting}>
+                    <button className="btn" type="submit" disabled={submitting} aria-label='submit'>
                         Submit
                     </button>
                     {succeeded && <p>Form Submitted Successfully!</p>}

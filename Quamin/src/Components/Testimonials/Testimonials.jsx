@@ -1,11 +1,11 @@
 import React, { useRef } from 'react'
 import "./Testimonials.css"
-import next_icon from "../../assets/next_icon.png"
-import back_icon from "../../assets/back_icon.png"
-import user_1 from "../../assets/user-1.png"
-import user_2 from "../../assets/user-2.png"
-import user_3 from "../../assets/user-3.png"
-import user_4 from "../../assets/user-4.png"
+import next_icon from "../../assets/next_icon.webp"
+import back_icon from "../../assets/back_icon.webp"
+import user_1 from "../../assets/user-1.webp"
+import user_2 from "../../assets/user-2.webp"
+import user_3 from "../../assets/user-3.webp"
+import user_4 from "../../assets/user-4.webp"
 
 const Testimonials = () => {
 
@@ -27,14 +27,14 @@ const Testimonials = () => {
 
   return (
     <div className='testimonials'>
-        <img src={next_icon} alt="" className='next-btn' onClick={slideForward}/>
-        <img src={back_icon} alt="" className='back-btn' onClick={slideBackward}/>
+        <img src={next_icon} alt="next item" className='next-btn' onClick={slideForward}/>
+        <img src={back_icon} alt="previous item" className='back-btn' onClick={slideBackward}/>
         <div className="slider">
             <ul ref={slider}>
                 <li>
                     <div className="slide">
                         <div className="user-info">
-                            <img src={user_1} alt="" />
+                            <img src={user_1} alt="user 1" />
                             <div>
                                 <h3>William Bowery</h3>
                                 <span>Independent Songwriter, UK</span>
@@ -46,7 +46,7 @@ const Testimonials = () => {
                 <li>
                     <div className="slide">
                         <div className="user-info">
-                            <img src={user_2} alt="" />
+                            <img src={user_2} alt="user 2" />
                             <div>
                                 <h3>Jack Antonoff</h3>
                                 <span>LMN Tech, USA</span>
@@ -58,7 +58,7 @@ const Testimonials = () => {
                 <li>
                     <div className="slide">
                         <div className="user-info">
-                            <img src={user_3} alt="" />
+                            <img src={user_3} alt="user 3" />
                             <div>
                                 <h3>Nils Sjöberg</h3>
                                 <span>Independent Songwriter, USA</span>
@@ -70,7 +70,7 @@ const Testimonials = () => {
                 <li>
                     <div className="slide">
                         <div className="user-info">
-                            <img src={user_4} alt="" />
+                            <img src={user_4} alt="user 4" />
                             <div>
                                 <h3>Travis Kelce</h3>
                                 <span>Kansas City Chiefs, USA</span>

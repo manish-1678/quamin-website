@@ -3,9 +3,9 @@ import { Link } from "react-router-dom";
 import { Link as IntraScroll } from "react-scroll";
 
 import "./Navbar.css";
-import logo from "../../../assets/QuaminGoldMain.png";
-import mobileLogo from "../../../assets/mobileGoldLogo.png";
-import menu_icon from "../../../assets/menubar.png";
+import logo from "../../../assets/QuaminGoldMain.webp";
+import mobileLogo from "../../../assets/mobileGoldLogo.webp";
+import menu_icon from "../../../assets/menubar.webp";
 
 const Navbar = () => {
   const [sticky, setSticky] = useState(false);
@@ -42,7 +42,7 @@ const Navbar = () => {
       </Link>
       <ul className={mobileMenu ? "" : "hide-mobile-menu"}>
         <li>
-          <Link to="/" smooth={true} offset={0} duration={500}>
+          <Link to="/" smooth={true} offset={0} duration={500} aria-label="home">
             Home
           </Link>
         </li>
@@ -52,6 +52,7 @@ const Navbar = () => {
             smooth={true}
             offset={-100}
             duration={500}
+            aria-label="our story"
           >
             Our Story
           </IntraScroll>
@@ -64,6 +65,7 @@ const Navbar = () => {
             offset={-260}
             duration={500}
             className="btn"
+            aria-label="subscribe"
           >
             Subscribe
           </IntraScroll>

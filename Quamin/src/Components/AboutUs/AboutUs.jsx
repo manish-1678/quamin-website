@@ -1,11 +1,11 @@
 import React, { useState } from 'react';
 import "./AboutUs.css";
-import about_1 from "../../assets/about_1.png";
-import about_2 from "../../assets/about_2.png";
-import about_3 from "../../assets/about_3.png";
-import about_icon_1 from "../../assets/about_icon_1.png";
-import about_icon_2 from "../../assets/about_icon_2.png";
-import about_icon_3 from "../../assets/about_icon_3.png";
+import about_1 from "../../assets/about_1.webp";
+import about_2 from "../../assets/about_2.webp";
+import about_3 from "../../assets/about_3.webp";
+import about_icon_1 from "../../assets/about_icon_1.webp";
+import about_icon_2 from "../../assets/about_icon_2.webp";
+import about_icon_3 from "../../assets/about_icon_3.webp";
 
 const AboutUs = () => {
   const [visibleIndex, setVisibleIndex] = useState(null);
