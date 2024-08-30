@@ -42,7 +42,13 @@ const Navbar = () => {
       </Link>
       <ul className={mobileMenu ? "" : "hide-mobile-menu"}>
         <li>
-          <Link to="/" smooth={true} offset={0} duration={500} aria-label="home">
+          <Link
+            to="/"
+            smooth={true}
+            offset={0}
+            duration={500}
+            aria-label="home"
+          >
             Home
           </Link>
         </li>
@@ -60,7 +66,7 @@ const Navbar = () => {
 
         <li>
           <IntraScroll
-            to="contact"
+            to="Subscribe-Button"
             smooth={true}
             offset={-260}
             duration={500}
