@@ -1,6 +1,6 @@
 {
   "hosting": {
-    "public": "build",
+    "public": "Quamin/dist",
     "ignore": [
       "firebase.json",
       "**/.*",
