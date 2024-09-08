@@ -1,7 +1,7 @@
 import React from 'react'
 import { Link } from 'react-router-dom';
 import "./Book.css"
-import book_img from "../../assets/book_img.png"
+import book_img from "../../assets/book_img.webp"
 
 const Book = () => {
   return (

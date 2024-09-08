@@ -1,9 +1,11 @@
 import React, { useEffect, useState } from "react";
-import { Link } from "react-scroll";
+import { Link } from "react-router-dom";
+import { Link as IntraScroll } from "react-scroll";
+
 import "./Navbar.css";
-import logo from "../../assets/QuaminGoldMain.webp";
-import mobileLogo from "../../assets/mobileGoldLogo.webp";
-import menu_icon from "../../assets/menubar.webp";
+import logo from "../../../assets/QuaminGoldMain.webp";
+import mobileLogo from "../../../assets/mobileGoldLogo.webp";
+import menu_icon from "../../../assets/menubar.webp";
 
 const Navbar = () => {
   const [sticky, setSticky] = useState(false);
@@ -35,18 +37,13 @@ const Navbar = () => {
 
   return (
     <nav className={`container ${sticky ? "dark-nav" : ""}`}>
-      <Link to="hero" smooth={true} offset={0} duration={500}>
-        <img
-          src={isMobile ? mobileLogo : logo}
-          alt="Logo"
-          className="logo"
-          aria-label="home"
-        />
+      <Link to="/" smooth={true} offset={0} duration={500}>
+        <img src={isMobile ? mobileLogo : logo} alt="Logo" className="logo" />
       </Link>
       <ul className={mobileMenu ? "" : "hide-mobile-menu"}>
         <li>
           <Link
-            to="hero"
+            to="/"
             smooth={true}
             offset={0}
             duration={500}
@@ -56,60 +53,28 @@ const Navbar = () => {
           </Link>
         </li>
         <li>
-          <Link
-            to="aboutus"
+          <IntraScroll
+            to="Section-Story"
             smooth={true}
-            offset={-260}
+            offset={-100}
             duration={500}
-            aria-label="about us"
+            aria-label="our story"
           >
-            About Us
-          </Link>
+            Our Story
+          </IntraScroll>
         </li>
+
         <li>
-          <Link
-            to="book"
-            smooth={true}
-            offset={-150}
-            duration={500}
-            aria-label="services"
-          >
-            Services
-          </Link>
-        </li>
-        <li>
-          <Link
-            to="careers"
-            smooth={true}
-            offset={-260}
-            duration={500}
-            aria-label="careers"
-          >
-            Careers
-          </Link>
-        </li>
-        <li>
-          <Link
-            to="testimonials"
-            smooth={true}
-            offset={-260}
-            duration={500}
-            aria-label="testimonials"
-          >
-            Testimonials
-          </Link>
-        </li>
-        <li>
-          <Link
-            to="contact"
+          <IntraScroll
+            to="Subscribe-Button"
             smooth={true}
             offset={-260}
             duration={500}
             className="btn"
-            aria-label="contact us"
+            aria-label="subscribe"
           >
-            Contact Us
-          </Link>
+            Subscribe
+          </IntraScroll>
         </li>
       </ul>
       <img
