@@ -1,6 +1,6 @@
 {
   "hosting": {
-    "public": "Quamin/dist",
+    "public": "QuaminWebsite/Quamin/dist",
     "ignore": [
       "firebase.json",
       "**/.*",
