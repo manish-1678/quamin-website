@@ -52,11 +52,11 @@
 .caption p {
     display: none;
     margin: 0;
-    text-align: justify; /* Justify alignment for newspaper style */
-    text-justify: inter-word; /* Ensure proper spacing between words */
-    line-height: 1.6; /* Adjust line height for readability */
+    text-align: justify;
+    text-justify: inter-word;
+    line-height: 1.6;
     font-size: 16px;
-    color: #0a0a0a;
+    color: #fafafa;
     font-weight: 600;
 }
 
