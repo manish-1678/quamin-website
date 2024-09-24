@@ -5,7 +5,7 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "backend": "node src/Pages/BlogServer/index.js",
+    "backend": "node ../BlogServer/index.js",
     "start": "concurrently \"npm run dev\" \"npm run backend\"",
     "build": "vite build",
     "lint": "eslint .",
